@@ -1,12 +1,12 @@
-## 关于显示
-* GitHub显示不完全,若要完全查看请下载到本地!
+## 注意
+* 不同环境下显示不同,若要详细查看,请下载到本地
 
 ## 关于数学公式符号
 1. 单行公式
 
    1. Typora:\$.*\$或\$\$.\*\$\$
-   2. Pycharm或Jupyter Notebook:\$.*\$
-
+   2. Pycharm/Jupyter Notebook/vscode:\$.*\$
+   
 2. 多行公式
 
    1. Typora(自动居中对齐):
@@ -28,10 +28,24 @@
          $$ x = t + \cos t + 1 $$
          </center>
          ```
+         
+      3. vscode(自动居中对齐)
+      
+         1. \$\$.\*\$\$
+         
+         2. \\[ .*\\]
+         
+         3. 其他:
+         
+            ```markdown
+            $$
+            .*
+            $$
+            ```
 
 3. 公式环境
 
-   1. Typora(自动居中对齐):
+   1. Typora/vscode(自动居中对齐,vscode支持不如Typora):
 
       ```markdown
       $$
@@ -86,10 +100,10 @@ y &= 2 \sin 5
 
 </font>
 ```
-* Typora中支持较差,不建议使用
+* Typora(.*md)/vscode(.\*.ipynb)对此支持较差,不建议使用
 
 ### 关于带有矩阵多行对齐公式
-##### Typora中显示
+##### Typora/vscode中显示(.*.md)
 ```Latex
 \begin{align}
 \frac{\partial y}{\partial X} &= 
@@ -101,7 +115,7 @@ y &= 2 \sin 5
 &= \frac{\partial y}{\partial X^T}
 \end{align}
 ```
-##### Pycharm,Jupyter Notebook中显示
+##### Pycharm/Jupyter Notebook/vscode中显示(.*.ipynb)
 ```Latex
 \begin{align}
 \frac{\partial y}{\partial X} &= 
@@ -109,7 +123,7 @@ y &= 2 \sin 5
 \frac{\partial y}{\partial x_{11}} & \dots  & \frac{\partial y}{\partial x_{m1}} \\
 \vdots                             & \ddots & \vdots \\
 \frac{\partial y}{\partial x_{1n}} & \dots  & \frac{\partial y}{\partial x_{mn}} \\
-\end{bmatrix} \\\\\ %才可正常进行换行
+\end{bmatrix} \\\\\ %才可正常进行换行(vscode中此处可以为//,也可以为/////)
 &= \frac{\partial y}{\partial X^T}
 \end{align}
 ```
