@@ -1,4 +1,4 @@
-typora/notebook:所有公式环境均不会自动编号
+typora/notebook环境:所有公式环境均不会自动编号
 
 $$
 % gather环境:可以自定义多个公式编号
